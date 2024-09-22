@@ -1,0 +1,29 @@
+import java.util.ArrayList;
+
+public class SimpleCollection {
+    public static void main(String[] args) {
+        // Create an ArrayList to store names
+        ArrayList<String> names = new ArrayList<>();
+
+        // Add names to the ArrayList
+        names.add("John");
+        names.add("Emma");
+        names.add("Sophia");
+        names.add("Mike");
+
+        // Print the names
+        System.out.println("List of names:");
+        for (String name : names) {
+            System.out.println(name);
+        }
+
+        // Removing a name
+        names.remove("Mike");
+
+        // Print the list after removing
+        System.out.println("\nAfter removing Mike:");
+        for (String name : names) {
+            System.out.println(name);
+        }
+    }
+}
